@@ -10,7 +10,7 @@ It uses [graphql-code-generator](https://github.com/dotansimha/graphql-code-gene
 As this package is dependent on [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) you may first install it and create a config for it.
 [Here](https://github.com/dotansimha/graphql-code-generator#quick-start) is a  guide on how to do that.
 
-As soo as you're ready you can continue to setup this package.
+As soon as you're ready you can continue to setup this package.
 First of all you need to [install it](#setup) with your preferred package manager.
 
 The *graphql-code-generator* plugin can be found under `vue-graphql-inject/lib/codegen`.
