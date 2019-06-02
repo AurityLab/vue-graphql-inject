@@ -1,7 +1,9 @@
 # Vue GraphQL Inject
+[![npm](https://img.shields.io/npm/v/vue-graphql-inject.svg)](https://www.npmjs.com/package/vue-graphql-inject)
+[![npm type definitions](https://img.shields.io/npm/types/vue-graphql-inject.svg)](https://www.npmjs.com/package/vue-graphql-inject)
 
 A simple way to use your GraphQL operations in a type-safe way with Vue!
-It uses [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) to generate the types everything.
+It uses [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) to generate the types.
 
 ### Quick start
 As this package is dependent on [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) you may first install it and create a config for it.
@@ -29,7 +31,16 @@ import { GraphQLInjectDefinition } from './generated/graphql-inject.ts'
 Vue.use(VueGraphQLInject, { definition: GraphQLInjectDefinition })
 ```
 
-# Setup
+Congratulations, you're now read to get started! Now you can use the following code in your Vue components:
+```javascript
+// For mutations:
+this.$gql().mutations.UpdateUser
+
+// For quries:
+this.$gql().queries.GetUser
+```
+
+# Install
 With NPM:
 ```
 $ npm install vue-graphl-inject
