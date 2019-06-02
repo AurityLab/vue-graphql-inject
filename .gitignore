@@ -226,3 +226,4 @@ $RECYCLE.BIN/
 *.lnk
 
 dist/
+lib/
