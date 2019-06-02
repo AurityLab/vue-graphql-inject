@@ -1,4 +1,5 @@
 # Vue GraphQL Inject
+![build](https://action-badges.now.sh/AurityLab/vue-graphql-inject)
 [![npm](https://img.shields.io/npm/v/vue-graphql-inject.svg)](https://www.npmjs.com/package/vue-graphql-inject)
 [![npm type definitions](https://img.shields.io/npm/types/vue-graphql-inject.svg)](https://www.npmjs.com/package/vue-graphql-inject)
 
