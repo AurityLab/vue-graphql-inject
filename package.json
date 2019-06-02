@@ -1,0 +1,7 @@
+{
+  "name": "vue-graphql-inject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andre Loreth <andre.loreth@live.de>",
+  "license": "MIT"
+}
