@@ -1,7 +1,23 @@
 {
   "name": "vue-graphql-inject",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/VueGraphQLInject.js",
+  "types": "lib/VueGraphQLInject.d.ts",
   "author": "Andre Loreth <andre.loreth@live.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vue": "^2.6.10"
+  },
+  "dependencies": {
+    "@graphql-codegen/plugin-helpers": "^1.2.0",
+    "@graphql-codegen/testing": "^1.2.0",
+    "@types/graphql": "^14.2.0",
+    "@types/node": "^12.0.4",
+    "@types/vue": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "graphql": "^14.3.1",
+    "typescript": "^3.5.1"
+  }
 }
