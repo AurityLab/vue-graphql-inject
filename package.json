@@ -1,15 +1,37 @@
 {
   "name": "vue-graphql-inject",
   "version": "1.0.0",
+  "keywords": [
+    "graphql",
+    "graphql-code-generator",
+    "graphql-code-generator-plugin",
+    "vue",
+    "vuejs"
+  ],
+  "bugs": {
+    "url": "https://github.com/AurityLab/vue-graphql-inject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AurityLab/vue-graphql-inject"
+  },
+  "license": "Apache-2.0",
+  "author": "AurityLab <info@auritylab.com>",
+  "files": [
+    "/lib",
+    "/README.md",
+    "/LICENSE"
+  ],
   "main": "lib/VueGraphQLInject.js",
   "types": "lib/VueGraphQLInject.d.ts",
-  "author": "Andre Loreth <andre.loreth@live.de>",
-  "license": "MIT",
-  "devDependencies": {
-    "vue": "^2.6.10"
+  "scripts": {
+    "build": "tsc"
   },
   "dependencies": {
     "@graphql-codegen/plugin-helpers": "^1.2.0",
+    "graphql": "^14.3.1"
+  },
+  "devDependencies": {
     "@graphql-codegen/testing": "^1.2.0",
     "@types/graphql": "^14.2.0",
     "@types/node": "^12.0.4",
@@ -17,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
     "eslint": "^5.16.0",
-    "graphql": "^14.3.1",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.1",
+    "vue": "^2.6.10"
   }
 }
