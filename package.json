@@ -5,7 +5,9 @@
     "graphql",
     "graphql-code-generator",
     "graphql-code-generator-plugin",
+    "graphql-codegen",
     "vue",
+    "vue-plugin",
     "vuejs"
   ],
   "bugs": {
