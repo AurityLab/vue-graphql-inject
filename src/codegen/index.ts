@@ -1,15 +1,20 @@
 import * as path from 'path'
 import {PluginFunction} from '@graphql-codegen/plugin-helpers';
+import {OperationDefinitionNode} from "graphql"
+import defineProperty = Reflect.defineProperty
 
 export const plugin: PluginFunction = async (schema, documents, config, info) => {
-    const mappedDocuments = documents.reduce((previous, document) => {
+    const mappedDocuments: {[key: string]: OperationDefinitionNode[]} = documents.reduce((previous, document) => {
         const fileName = document.filePath;
 
-        if (!previous[fileName])
-            previous[fileName] = [];
+        const definitions = document.content.definitions.filter((document) => document.kind === 'OperationDefinition')
 
-        previous[fileName].push(...document.content.definitions
-            .filter((document) => document.kind === 'OperationDefinition'));
+        if (definitions.length > 0) {
+            if (!previous[fileName])
+                previous[fileName] = [];
+
+            previous[fileName].push(...definitions);
+        }
 
         return previous;
     }, {});
@@ -26,33 +31,28 @@ export const plugin: PluginFunction = async (schema, documents, config, info) =>
             const operationsImport = operations.map(op => op.name.value).join(',')
 
             return `import {${operationsImport}} from "${relativePath}"`
-        }).join('\n') + '\n' + "import {DocumentNode} from 'graphql'"
+        }).join('\n')
 
 
-    const definition = Object.keys(mappedDocuments)
-        .map(documentFile => {
-            const operations = mappedDocuments[documentFile]
+    const definition =  Object.keys(mappedDocuments).map(val => mappedDocuments[val])
+        .reduce((previous, definitions) => {
+            definitions.forEach(definition => {
+                previous[definition.operation].push(`${definition.name.value}: ${definition.name.value}`)
+            })
 
-            return operations.map(value => `${value.name.value}: ${value.name.value}`).join(',\n')
-        }).join(',\n')
-
-    const typeDefinitionMap = Object.keys(mappedDocuments)
-        .map(documentFile => {
-            const operations = mappedDocuments[documentFile]
-
-            return operations.map(value => `${value.name.value}: DocumentNode`).join(',\n')
-        }).join(',\n')
+            return previous
+        }, {query: [], mutation: [], subscription: []})
 
     const injectDefinition = `export const GraphQLInjectDefinition = {
-        ${definition}
+        queries: {${definition['query'].join(',\n')}},
+        mutations: {${definition['mutation'].join(',\n')}},
+        subscriptions: {${definition['subscription'].join(',\n')}}
     }`
 
     const typeDefinition = `declare module 'vue/types/vue' {
         interface Vue {
             $gql(): {
-                operations: {
-                   ${typeDefinitionMap}
-                }
+                operations: typeof GraphQLInjectDefinition
             }
         }
     }`
