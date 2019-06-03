@@ -1,7 +1,6 @@
 import * as path from 'path'
-import {PluginFunction} from '@graphql-codegen/plugin-helpers';
+import {PluginFunction, PluginValidateFn} from '@graphql-codegen/plugin-helpers';
 import {OperationDefinitionNode} from "graphql"
-import defineProperty = Reflect.defineProperty
 
 export const plugin: PluginFunction = async (schema, documents, config, info) => {
     const mappedDocuments: {[key: string]: OperationDefinitionNode[]} = documents.reduce((previous, document) => {
@@ -51,17 +50,14 @@ export const plugin: PluginFunction = async (schema, documents, config, info) =>
 
     const typeDefinition = `declare module 'vue/types/vue' {
         interface Vue {
-            $gql(): {
-                operations: typeof GraphQLInjectDefinition
-            }
+            $gql: typeof GraphQLInjectDefinition
         }
     }`
 
     return imports + '\n' + injectDefinition + '\n' + typeDefinition
 }
 
-/*export const validate: PluginValidateFn<any> = async (schema: GraphQLSchema, documents: Types.DocumentFile[], config: any, outputFile: string) => {
-    if (!outputFile.endsWith('.d.ts')) {
-        throw new Error(`Plugin "typescript-graphql-files-modules" requires extension to be ".d.ts"!`);
-    }
-};*/
+export const validate: PluginValidateFn<any> = (schema, documents, config, outputFile) => {
+    if (!outputFile.endsWith('.ts') || outputFile.endsWith('.d.ts'))
+        throw Error(`Plugin "vue-graphql-inject/lib/codegen" requires extension to be ".ts"!`)
+}
