@@ -7,11 +7,11 @@ A simple way to use your GraphQL operations in a type-safe way with Vue!
 It uses [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) to generate the types.
 
 ### Quick start
-As this package is dependent on [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator) you may first install it and create a config for it.
+This package requires [graphql-code-generator](https://github.com/dotansimha/graphql-code-generator). If you haven't already, install it and create a new config.
 [Here](https://github.com/dotansimha/graphql-code-generator#quick-start) is a  guide on how to do that.
 
 As soon as you're ready you can continue to setup this package.
-First of all you need to [install it](#setup) with your preferred package manager.
+First of all you need to [install it](#install) with your preferred package manager.
 
 The *graphql-code-generator* plugin can be found under `vue-graphql-inject/lib/codegen`.
 You may add a new output file specifically for this plugin. For example: 
