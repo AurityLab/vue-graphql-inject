@@ -16,20 +16,20 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@graphql-codegen/plugin-helpers@1.4.0", "@graphql-codegen/plugin-helpers@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.4.0.tgz#46e04fa1477172930ef5b1cd8461ee65fe9a4aa3"
+"@graphql-codegen/plugin-helpers@1.6.1", "@graphql-codegen/plugin-helpers@^1.4.0":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.6.1.tgz#406fb6a2b64f536be5612edf9b04c901f474f113"
   dependencies:
     change-case "3.1.0"
     common-tags "1.8.0"
     import-from "3.0.0"
     tslib "1.10.0"
 
-"@graphql-codegen/testing@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/testing/-/testing-1.4.0.tgz#5290df2357f092f222ee54fc11e422e01d215cba"
+"@graphql-codegen/testing@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/testing/-/testing-1.6.1.tgz#643e27bc62c89f3a3363dabc13af15c2748abd74"
   dependencies:
-    "@graphql-codegen/plugin-helpers" "1.4.0"
+    "@graphql-codegen/plugin-helpers" "1.6.1"
     common-tags "1.8.0"
     tslib "1.10.0"
 
