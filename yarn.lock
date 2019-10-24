@@ -16,21 +16,23 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@graphql-codegen/plugin-helpers@1.7.0", "@graphql-codegen/plugin-helpers@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.7.0.tgz#b1870a166cf34b2c67c053f2a9ec77823f78ac2d"
+"@graphql-codegen/plugin-helpers@1.8.2", "@graphql-codegen/plugin-helpers@^1.7.0":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.8.2.tgz#b982d9af9a68a3571118a1ad27ff512e49216a0c"
   dependencies:
     change-case "3.1.0"
     common-tags "1.8.0"
     import-from "3.0.0"
     tslib "1.10.0"
 
-"@graphql-codegen/testing@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/testing/-/testing-1.7.0.tgz#d083cf54c7e85a50feca01d53bf77ab5f073e876"
+"@graphql-codegen/testing@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/testing/-/testing-1.8.2.tgz#5cc30bb2e479b85a27a6c3bb033f409b96e4b664"
   dependencies:
-    "@graphql-codegen/plugin-helpers" "1.7.0"
+    "@graphql-codegen/plugin-helpers" "1.8.2"
     common-tags "1.8.0"
+    lz-string "1.4.4"
+    open "7.0.0"
     tslib "1.10.0"
 
 "@types/eslint-visitor-keys@^1.0.0":
@@ -518,6 +520,10 @@ is-upper-case@^1.1.0:
   dependencies:
     upper-case "^1.1.0"
 
+is-wsl@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/is-wsl/-/is-wsl-2.1.1.tgz#4a1c152d429df3d441669498e2486d3596ebaf1d"
+
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
@@ -569,6 +575,10 @@ lower-case-first@^1.0.0:
 lower-case@^1.1.0, lower-case@^1.1.1, lower-case@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
+
+lz-string@1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
 
 mimic-fn@^1.0.0:
   version "1.2.0"
@@ -623,6 +633,12 @@ onetime@^2.0.0:
   resolved "https://registry.yarnpkg.com/onetime/-/onetime-2.0.1.tgz#067428230fd67443b2794b22bba528b6867962d4"
   dependencies:
     mimic-fn "^1.0.0"
+
+open@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/open/-/open-7.0.0.tgz#7e52999b14eb73f90f0f0807fe93897c4ae73ec9"
+  dependencies:
+    is-wsl "^2.1.0"
 
 optionator@^0.8.2:
   version "0.8.2"
