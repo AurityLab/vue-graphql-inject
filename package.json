@@ -30,7 +30,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@graphql-codegen/plugin-helpers": "^1.7.0",
+    "@graphql-codegen/plugin-helpers": "^1.8.3",
     "graphql": "^14.4.2"
   },
   "devDependencies": {
