@@ -26,9 +26,9 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@graphql-codegen/plugin-helpers@1.12.2", "@graphql-codegen/plugin-helpers@^1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.12.2.tgz#44ffeefb21515b021f99c6e5be28699d740af560"
+"@graphql-codegen/plugin-helpers@1.13.0", "@graphql-codegen/plugin-helpers@^1.12.2":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.13.0.tgz#9adfd2d63b4616f2e8e6396726fe93aa7d760a0c"
   dependencies:
     "@graphql-toolkit/common" "0.9.7"
     camel-case "4.1.1"
@@ -38,18 +38,18 @@
     lower-case "2.0.1"
     param-case "3.0.3"
     pascal-case "3.1.1"
-    tslib "1.10.0"
+    tslib "1.11.1"
     upper-case "2.0.1"
 
-"@graphql-codegen/testing@^1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/testing/-/testing-1.12.2.tgz#d68fc77be6af7a79befed0fc4b5ef0984548c808"
+"@graphql-codegen/testing@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/testing/-/testing-1.13.0.tgz#dfa579807160157f58b798221fcecd7ae7913bfb"
   dependencies:
-    "@graphql-codegen/plugin-helpers" "1.12.2"
+    "@graphql-codegen/plugin-helpers" "1.13.0"
     common-tags "1.8.0"
     lz-string "1.4.4"
-    open "7.0.2"
-    tslib "1.10.0"
+    open "7.0.3"
+    tslib "1.11.1"
 
 "@graphql-toolkit/common@0.9.7":
   version "0.9.7"
@@ -702,9 +702,9 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-open@7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/open/-/open-7.0.2.tgz#fb3681f11f157f2361d2392307548ca1792960e8"
+open@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/open/-/open-7.0.3.tgz#db551a1af9c7ab4c7af664139930826138531c48"
   dependencies:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
@@ -910,9 +910,9 @@ ts-invariant@^0.4.0:
   dependencies:
     tslib "^1.9.3"
 
-tslib@1.10.0, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
+tslib@1.11.1, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
 
 tsutils@^3.7.0:
   version "3.13.0"
