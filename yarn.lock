@@ -26,7 +26,7 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@graphql-codegen/plugin-helpers@1.12.2", "@graphql-codegen/plugin-helpers@^1.12.2":
+"@graphql-codegen/plugin-helpers@1.12.2":
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.12.2.tgz#44ffeefb21515b021f99c6e5be28699d740af560"
   dependencies:
@@ -39,6 +39,21 @@
     param-case "3.0.3"
     pascal-case "3.1.1"
     tslib "1.10.0"
+    upper-case "2.0.1"
+
+"@graphql-codegen/plugin-helpers@^1.15.1":
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.15.1.tgz#7fce2f93cf42199ca977018bcb8f67e946d5503a"
+  dependencies:
+    "@graphql-tools/utils" "^6.0.0"
+    camel-case "4.1.1"
+    common-tags "1.8.0"
+    constant-case "3.0.3"
+    import-from "3.0.0"
+    lower-case "2.0.1"
+    param-case "3.0.3"
+    pascal-case "3.1.1"
+    tslib "~2.0.0"
     upper-case "2.0.1"
 
 "@graphql-codegen/testing@^1.12.2":
@@ -58,6 +73,12 @@
     "@ardatan/graphql-tools" "4.1.0"
     aggregate-error "3.0.1"
     lodash "4.17.15"
+
+"@graphql-tools/utils@^6.0.0":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.7.tgz#0dc8837988b04961162bb76741bfa1072a03418c"
+  dependencies:
+    camel-case "4.1.1"
 
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
@@ -913,6 +934,10 @@ ts-invariant@^0.4.0:
 tslib@1.10.0, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
+
+tslib@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
 
 tsutils@^3.7.0:
   version "3.13.0"
