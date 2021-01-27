@@ -581,9 +581,9 @@ graphql-tools-fork@8.9.6:
     node-fetch "^2.6.0"
     uuid "^7.0.1"
 
-graphql@*, graphql@^15.4.0:
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.4.0.tgz#e459dea1150da5a106486ba7276518b5295a4347"
+graphql@*, graphql@^15.5.0:
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
 
 has-flag@^3.0.0:
   version "3.0.0"
