@@ -55,15 +55,15 @@
     tslib "1.11.1"
     upper-case "2.0.1"
 
-"@graphql-codegen/plugin-helpers@^1.18.4":
-  version "1.18.4"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.18.4.tgz#0adc4c0f88386a50b7a69d358080b6ee54fc3b16"
+"@graphql-codegen/plugin-helpers@^1.18.5":
+  version "1.18.5"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.18.5.tgz#e1d875cfb6a2f7bf4b4318135f7fee6e1200f3b0"
   dependencies:
     "@graphql-tools/utils" "^7.0.0"
     common-tags "1.8.0"
     import-from "3.0.0"
     lodash "~4.17.20"
-    tslib "~2.1.0"
+    tslib "~2.2.0"
 
 "@graphql-codegen/testing@^1.13.1":
   version "1.13.1"
@@ -949,13 +949,17 @@ tslib@1.11.1, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.3:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
 
-tslib@^2.0.3, tslib@~2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+tslib@^2.0.3, tslib@~2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
 
 tslib@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
+
+tslib@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
 
 tsutils@^3.7.0:
   version "3.13.0"
