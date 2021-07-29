@@ -117,9 +117,9 @@
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.3.tgz#bdfd69d61e464dcc81b25159c270d75a73c1a636"
 
-"@types/node@^16.4.4":
-  version "16.4.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.4.tgz#bb0744c1dcc1fc374f51d3fd41d028331a2420d4"
+"@types/node@^16.4.6":
+  version "16.4.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.4.6.tgz#1734d119dfa8fede5606d35ae10f9fc9c84d889b"
 
 "@types/vue@^2.0.0":
   version "2.0.0"
