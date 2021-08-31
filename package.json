@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@graphql-codegen/plugin-helpers": "^2.1.1",
-    "graphql": "^15.5.1"
+    "graphql": "^15.5.2"
   },
   "devDependencies": {
     "@graphql-codegen/testing": "^1.13.1",
