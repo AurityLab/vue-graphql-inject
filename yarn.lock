@@ -35,16 +35,16 @@
     tslib "1.11.1"
     upper-case "2.0.1"
 
-"@graphql-codegen/plugin-helpers@^2.4.2":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.4.2.tgz#e4f6b74dddcf8a9974fef5ce48562ae0980f9fed"
+"@graphql-codegen/plugin-helpers@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.6.0.tgz#ae7005e6a2dcb0095ae350970c41606906048a27"
   dependencies:
-    "@graphql-tools/utils" "^8.5.2"
+    "@graphql-tools/utils" "^8.8.0"
     change-case-all "1.0.14"
     common-tags "1.8.2"
     import-from "4.0.0"
     lodash "~4.17.0"
-    tslib "~2.3.0"
+    tslib "~2.4.0"
 
 "@graphql-codegen/testing@^1.13.1":
   version "1.13.1"
@@ -64,11 +64,11 @@
     graphql-tools-fork "8.9.6"
     lodash "4.17.15"
 
-"@graphql-tools/utils@^8.5.2":
-  version "8.5.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.5.2.tgz#fa775d92c19237f648105f7d4aeeeb63ba3d257f"
+"@graphql-tools/utils@^8.8.0":
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.8.0.tgz#8332ff80a1da9204ccf514750dd6f5c5cccf17dc"
   dependencies:
-    tslib "~2.3.0"
+    tslib "^2.4.0"
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.2"
@@ -1091,9 +1091,9 @@ tslib@1.11.1, tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.3:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
 
-tslib@^2.0.3, tslib@~2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+tslib@^2.0.3, tslib@^2.4.0, tslib@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
 
 tsutils@^3.7.0:
   version "3.13.0"
