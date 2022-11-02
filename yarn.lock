@@ -35,9 +35,9 @@
     tslib "1.11.1"
     upper-case "2.0.1"
 
-"@graphql-codegen/plugin-helpers@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.7.1.tgz#de999bdf8a1485f6f3c4c5f21cfb038e99d67e3e"
+"@graphql-codegen/plugin-helpers@^2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.7.2.tgz#6544f739d725441c826a8af6a49519f588ff9bed"
   dependencies:
     "@graphql-tools/utils" "^8.8.0"
     change-case-all "1.0.14"
