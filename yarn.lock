@@ -35,12 +35,12 @@
     tslib "1.11.1"
     upper-case "2.0.1"
 
-"@graphql-codegen/plugin-helpers@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.7.1.tgz#de999bdf8a1485f6f3c4c5f21cfb038e99d67e3e"
+"@graphql-codegen/plugin-helpers@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-3.1.1.tgz#c2e324df8e56942dc6d9947ec70025614f5f94d7"
   dependencies:
     "@graphql-tools/utils" "^8.8.0"
-    change-case-all "1.0.14"
+    change-case-all "1.0.15"
     common-tags "1.8.2"
     import-from "4.0.0"
     lodash "~4.17.0"
@@ -374,9 +374,9 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-change-case-all@1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/change-case-all/-/change-case-all-1.0.14.tgz#bac04da08ad143278d0ac3dda7eccd39280bfba1"
+change-case-all@1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/change-case-all/-/change-case-all-1.0.15.tgz#de29393167fc101d646cd76b0ef23e27d09756ad"
   dependencies:
     change-case "^4.1.2"
     is-lower-case "^2.0.2"
